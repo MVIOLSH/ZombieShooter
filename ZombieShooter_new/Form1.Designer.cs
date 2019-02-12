@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ZombieShooter));
             this.timerGameLoop = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -43,6 +44,7 @@
             this.BackgroundImage = global::ZombieShooter_new.Properties.Resources.Graveyard_ok;
             this.ClientSize = new System.Drawing.Size(1008, 537);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ZombieShooter";
             this.Text = "Zombie Shooter";
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ZombieShooter_MouseClick);
