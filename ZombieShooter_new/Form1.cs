@@ -148,6 +148,11 @@ namespace ZombieShooter_new
             }
             else if (e.X > 693 && e.X < 753 && e.Y > 224 && e.Y < 251)  // Restart buton region definition
             {
+                timerGameLoop.Stop();
+                _averageShots = 0;
+                _misses = 0;
+                _totalShots = 0;
+                _hits = 0;
 
             }
             else if (e.X > 696 && e.X < 757 && e.Y > 274 && e.Y < 298)  // Quit buton region definition
